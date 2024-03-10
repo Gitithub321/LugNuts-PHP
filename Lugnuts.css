@@ -180,7 +180,7 @@ input[type="password"] {
 }
 
 input[type="submit"] {
-  background-color: rgba(31, 73, 125, 0.8),
+  background-color: rgba(31, 73, 125, 0.8);
   color: white;
   padding: 15px 20px;
   border: none;
