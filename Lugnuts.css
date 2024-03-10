@@ -135,12 +135,13 @@ body {
     overflow-y: hidden;
 }
 
-.bgImg {
-    background-image: url("/imgs/lugnutWheelHand.jpg");
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
-    z-index: 1
+
+img.bgImg {
+    pointer-events: none;
+    position: absolute;
+    width: calc(100% - 200px);
+    height: 100%;
+    z-index: -1;
 }
 
 .overlay {
@@ -161,7 +162,23 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 64px;
+    font-size: 32px;
+}
+
+.homeMiddleCenterText {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 18px;
+}
+
+.homeBottomCenterText {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 18px;
 }
 
 .card-img-overlay {
@@ -180,7 +197,7 @@ input[type="password"] {
 }
 
 input[type="submit"] {
-  background-color: rgba(31, 73, 125, 0.8),
+  background-color: rgba(31, 73, 125, 0.8);
   color: white;
   padding: 15px 20px;
   border: none;
