@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\assets",
+    "\\assets\\css",
+    "\\assets\\imgs",
+    "\\Views"
   ],
-  "SelectedNode": "\\C:\\Users\\katie\\Source\\Repos\\LugNuts-PHP",
+  "SelectedNode": "\\Views\\Home.html",
   "PreviewInSolutionExplorer": false
 }
