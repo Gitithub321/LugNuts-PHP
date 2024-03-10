@@ -167,3 +167,28 @@ body {
 .card-img-overlay {
     background-color: rgba(0,0,0,0.4); /* Black background with opacity */
 }
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: rgba(31, 73, 125, 0.8),
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: rgba(31, 73, 125, 0.8),
+}
