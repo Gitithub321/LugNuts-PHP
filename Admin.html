@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Larry Lugnuts</title>
+    <link rel="stylesheet" type="text/css" href="/Lugnuts.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/3871013723.js" crossorigin="anonymous"></script>
+
+    <!--DataTables CDN-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.2/css/dataTables.dataTables.css" />
+    <script src="https://cdn.datatables.net/2.0.2/js/dataTables.js"></script>
+
+</head>
+
+<body>
+    <ul class="navigation">
+        <span class="navbar-brand" href="#">
+            <img src="/imgs/logoDark.jpg" width="30" height="30" alt="" />
+        </span>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li><a href="Account.html">Account</a></li>
+        <li><a class="active" href="Admin.html">Admin</a></li>
+        <li style="float:right;"><a href="Cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+    </ul>
+
+
+    <div class="bgContainer">
+        <div class="m-5" style="padding-top: 10px;">
+            <table id="myTable" class="display">
+                <thead>
+                    <tr>
+                        <th>SKU Number</th>
+                        <th>Item</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ABC1234</td>
+                        <td>Acorn Lugnut</td>
+                        <td>Acorn Lugnut that is 3/4" long typically used on Ford F-150s.</td>
+                        <td>$3</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr>
+                        <td>DEF5678</td>
+                        <td>Flat Faced Lugnut</td>
+                        <td>Flat Flaced Lugnut that is 2/16" long typically used on Honda Fits.</td>
+                        <td>$2.50</td>
+                        <td>2000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="footerDark">
+        <img style="float: left; position: relative; top: 2px;" width="35" height="35" src="/imgs/LugNutLogo-Round.jpg" />
+        <p>© Copyright 2024 - Lugnuts Automotive Parts Supply</p>
+        <img style="float:right; position:relative; top:-27px;" width="175" height="35" src="/imgs/socials-dark.png" />
+    </div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var table = $('#myTable').DataTable();
+
+        //inlined editing example once database connection is established...https://editor.datatables.net/examples/inline-editing/simple.html
+    });
+
+    
+</script>
